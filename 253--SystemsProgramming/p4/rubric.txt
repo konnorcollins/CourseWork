@@ -1,0 +1,26 @@
+Grade: 70/70
+Points Back: XX
+=================================================
+Quality
+- Code is well formatted and easy to read 10/10
+
+- History command still works 10/10
+
+- cd command still works 5/5
+
+- cd/history command does NOT use FORK 5/5
+
+- Fork/exec works without errors 15/15
+  - ls
+  - ls -a
+  - ls -a -l
+  - sleep 5
+  - foooooooooo
+
+- Randomly kills 25% of processes 15/15
+
+- Valgrind is clean 10/10
+
+
+Reflection:
+	Functionality requested by the project page is present.  I am probably going to make the console prompt include a current directory.  I would also like to refactor History to remove the two global variables found in history.c.  Checking how accurate the RNG on random process killing would be nice, but I do not care for 'rand(void)' very much at all.  This iteration of Smash works as intended, but could use a little WD40.

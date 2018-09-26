@@ -1,0 +1,36 @@
+Grade: 54/70
+=================================
+- Git repo (backpack) is all up to date and git status returns clean.  5/5 pts.
+  - git pull
+  - git status
+	Everything is clean and up to date when git pull and git status is called.
+
+- Part 1	15/15 pts
+  - Modularity/Readability.
+	Code is well modularized. Plenty of useful comments in areas which might 
+	be confusing to follow as well.
+
+- Part 2	21/36 pts
+  - Command history
+	History command works as expected. Memory is properly allocated and freed.
+	The only problem is there is no way to detect if the history buffer is full.
+	If you enter over 256 commands the code will break.
+  - Is there a maximum number of entries?
+	Yes, 256.
+  - What happens when you hit the maximum?
+	The code breaks.
+	
+
+- Code quality 	 13/14 pts
+  - Valgrind (6/7) 
+	History command passes valgrind, no memory leaks on program exit. Some issues
+	however with the cd command
+  - Can I understand the code? (7/7)
+
+
+- Reflection
+
+  Planned fixes for tonight prior to deadline:
+  	  Error checking on  chdir command - an error occurs when you pass a null pointer to the function.
+	  Error checking on an overflowing history array.  Rather than crashing completely, it should simply either overwrite the last entry or not write at all.
+	  

@@ -1,0 +1,53 @@
+Grade: 70/70
+=================================================
+- Passing all grader scripts (50 points): 50/50
+
+  Reflection:
+	When ran as a user, the smash console is capable of echoing tokens for non-implemented functions, changing directories, and can self-terminate.  Accounting for user input, the text sent to standard out looks quite nice.  It would seem that the grader does not like formatted text, which is a travesty commited in the name of cleanliness.  As it stands, I will keep the formatting the same.  Feel free to try out the smash shell to see what I mean.  I will include a comparison of the user and grader output at the bottom of this file.
+
+- Code quality (10 points): 10/10
+	The programmer makes consistent use of indentation
+	The programmer makes consistent use of braces
+	#include directives are listed at the top of the file
+	#define directives are at the top of the file, after includes
+	The programmer makes use of comments where necessary
+	There are no unnecessary lines of code (e.g. commented, unused code)
+	No global variables are used
+	The names of constants defined by #define are in all CAPITAL letters
+	Variable names are descriptive
+	Variable name casing is consistent (e.g. camelCase or underscore_separation)
+	Variables are all initialized before use
+
+
+- README.md: 10/10
+	Follows the required format.
+	Is descriptive about how to compile and use.
+
+  Example user output:
+  	  [konnorcollins@onyxnode03 p2]$ make smash
+	  gcc -Wall -g -c smash.c
+	  gcc -Wall -g smash.o -o smash
+	  ./smash
+	  $ test -l -a
+	  [0] test
+	  [1] -l
+	  [2] -a
+	  $ but why though
+	  [0] but
+	  [1] why
+	  [2] though
+	  $ cd /   
+	  /
+	  $ exit
+	  [konnorcollins@onyxnode03 p2]$ ls -l
+
+   Example gradescript output:
+     	  [konnorcollins@onyxnode03 p2]$ cat smash.out
+	  $ [0] ls
+	  [1] -l
+	  [2] -a
+	  $ [0] cat
+	  [1] hello.txt
+	  $ [0] pwd$ [konnorcollins@onyxnode03 p2]$ 
+
+
