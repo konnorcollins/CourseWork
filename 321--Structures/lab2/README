@@ -1,0 +1,69 @@
+****************
+* Project 2: Priority Queue
+* CS 321
+* 9/29/3017
+* Konnor Collins
+**************** 
+
+OVERVIEW:
+
+ The included program simulates a Priority Queue using randomly generated Process' on a CPU Scheduler.  This Priority Queue uses a Max-Heap.
+
+
+INCLUDED FILES:
+
+ * MaxHeap.java - source file
+ * PQueue.java - source file
+ * Process.java - source file
+ * ProcessGenerator.java - source file
+ * README - this file
+
+
+COMPILING AND RUNNING:
+
+ To compile the program, use the following command in the same directory as the source files via bash:
+	$ javac *.java
+ This should compile the program provided your compiler is not defunct.
+ 
+ To run the program, simply use the following command in the same directory as the compiled program via bash:
+	$ java CPUScheduler [max-process-time] [max-priority-level] [max-idle-time] [simulation-time] [process-arrival-probability]
+ Wheras the arguments are the following
+	max-process-time: The maximum amount of time a process should take to finish.
+	max-priority-level: The maximum priority a process can have.
+	max-idle-time: The amount of idle time a process can accumulate before having its priority increased.
+	simulation-time: The amount of ticks the simulation will run.
+	process-arrival-probability: The probability of a new process being created and added to the scheduler.
+ All arguments take a positive integer value, save for process-arrival-probability, which takes any double value between 0.0d (inclusive) and 1.0d (exclusive).
+ Provided you make proper usage of the program, the program will print its results to the console.
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+ The Scheduler runs makes use of a Priority Queue, which in turn uses a Max-Heap.
+ I am responsible for implementing the Max-Heap, Priority Queue, as well as the Process and Process Generator classes.
+ 
+ The Max-Heap is based off a binary heap sorted by maximum values.  The object and the key are stored in the provided HeapNode object.  These object/key pairs are then stored in an array.
+ The Max-Heap can determine which parent has which children in the array with the implemented "left" , "right" , and "parent" methods in the MaxHeap class.
+ The Priority Queue uses the Max-Heap and its methods to simulate a Priority Queue.  Most of the Priority Queue's methods are just calls to the Max-Heap, making it rather simply to understand.
+ 
+ The Process class represents a simulated Process on a CPU.  It keeps track of how much processing time it needs to finish, as well as how long it has been idle.  A finished process will be removed from the previously mentioned Priority Queue permanently.
+ 
+ Each Process is generated randomly, with each process time requirement and maximum priority level also being determined randomly between 1 and a user-defined maximum.  Generally speaking, all Process generation is handled by the aptly named ProcessGenerator class.
+
+TESTING:
+ 
+ The program was rigorously tested with varying command line argument inputs.
+ A few issues came up in testing that were frankly embaressing.  Most of this was attempting to access a null value or an index outside of the Max-Heap's capacity.
+ These were all solved fairly quickly.  There were never really any issues with the basic functionality of max-heapifying or inserting a value into the Heap.
+
+
+DISCUSSION:
+ 
+ A few issues came up while working on the MaxHeap only.
+ First was a simple blunder.  Even when expanding the capacity of the heap, attempting to insert a new value into the heap resulted in accessing an index that did not exist.
+	This was caused by setting the initial size of the heap in the default MaxHeap constructor equal to the length of the HeapNode array.  Changing this value to 0 fixed this issue.
+
+ There was also an issue with calculating the correct index of a node's children.  This was due to not using index values beginning at 1 rather than 0.  This was circumvented by simply incrementing the index parameter for the "left", "right", and "parent" methods in MaxHeap and decrementing the result.  Simple issue.
+ 
+ Lastly, there was an issue with the HeapMax variable in MaxHeap.  It was storing a null value when it was fetched at the beginning of the simulation.  Apparently I had forgot to set the MaxHeap variable to any value before extracting it.  Oops.  This was also easily fixed.
+ 
+ Most of the issue, as you can see, are basic maintanence issues that were simply overlooked.  Max-Heapifying the array and basic insertion were fairly simple to implement, this issues excluded.  The other classes were also fairly easy to implement.

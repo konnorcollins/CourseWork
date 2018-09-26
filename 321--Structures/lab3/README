@@ -1,0 +1,100 @@
+****************
+* Lab 03 - Hash Table
+* CS 321
+* 10-20-2017
+* Konnor Collins
+**************** 
+
+OVERVIEW:
+
+The included program simulates HashTables with linear probing and double-hash probing by reading in tokens of a specified type from a user-specified file.
+You can compare how my HashTable compares to Java's core library implementation found in "java.util.Hashtable".
+
+
+INCLUDED FILES:
+
+ * HashObject.java - source file
+ * OpenAddressType.java - source file
+ * HashTable.java - source file
+ * HashTest.java - source file
+ * HashTestWithJava.java - source file
+ * README - this file
+
+
+COMPILING AND RUNNING:
+
+ To compile the included program, use the following command in the directory containing all source files via bash:
+ 	javac *.java
+ 
+ If successful, you should see a ".class" file for every ".java" file that was included with this submission.
+ 
+ To run a simulation of my implementation of a Hash Table, use the following command in the same directory as the compiled source code:
+ 	java HashTest [load factor] [hash table capacity] [input file] [input type] [ | debug level]
+ 	
+ 	whereas
+ 		[load factor]: Specifies the load factor for the Hash Table (commonly referred to as alpha).
+ 		[hash table capacity]: Specifies the maximum capacity for the Hash Table (commonly referred to as 'm').
+ 		[input file]: You must specify a path to a file containing data corresponding to the type specified in the next next argument, "input type".
+ 		[input type]: The type of data you wish to store in the Hash Table's.  This will be limited to Integer, Long, and String, denoted by 0, 1, and 2 respectively.
+ 		[ | debug level]: If set to 1 (integer), each Hash Table's contents will be printed at the end of the simulation.  Leaving this blank will default the level to 0.
+ 	
+ You can also run a simulation using Java's Hashtable using the following command in that same directory:
+ 	java HashTestWithJava [input type] [load factor] [hash table capacity] [input file] [ |debug level]
+ 	
+ 	NOTE: All arguments of the same name serve the same function as the last given command.  The order is merely switched.
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+	Organization of the program's classes is done as specified by the provided UML diagram found at <http://cs.boisestate.edu/~cs321/projects/hashtable/3-HashTables.html>.
+	
+	A few new methods were added to the HashTable class.  
+	For example, a method to compute if the table was nearing capacity as manually performing that operation became cumbersome towards end of development.
+	
+	HashTest and HashTestWithJava are split into two separate entry-points, as merging both would be too taxing on resources and time.  
+	Both also have varying amounts of accessible information in their respective simulations, so this decision remains sound in my eyes.
+
+	HashObject is a handler for holding an object and a key to sort that object.  It also determines that Key/Object pair's hash code.
+	HashTable stores HashObjects for insertion, removal, and comparison.  HashTable also keeps track of how many duplicates exist for each HashObject.
+	OpenAddressType is an enumeration for the types of probing available in HashTable.  Currently, only linear probing and double-hash probing are functional.  Attempting to specify quadratic probing will result in an exception being thrown.
+	
+
+TESTING:
+
+  I ran some simulations with the provided 'word-list' file.  I have included example outputs from the following commands:
+  	HashTest:
+  	java HashTest 0.5 95191 word-list 2
+  	|Using Linear Probing...
+	|Inserted 47595 values with 0 duplicates
+	|Load factor: 0.5 Average number of probes: 426.96
+	|
+	|Using Double Hash Probing...
+	|Inserted 47595 values with 0 duplicates
+	|Load factor: 0.5 Average number of probes: 210.33
+	
+	
+  	HashTestWithJava:
+  	java HashTestWithJava 2 0.5 95191 word-list
+  	|Table size: 95191
+	|Data source: word-list
+	|Data type: String
+	|Using Java Hashtable...
+	|Inserted 47595 elements, of which 1298303 are duplicates
+	|
+	|Load Factor: 0.5
+  
+  Note that the word-list file was included with the materials for this project.
+
+
+DISCUSSION:
+ 
+ There was some minor confusion as to how to implement each hash function.  This was remedied by more carefully observing the provided materials for further information.
+ 
+ There was also an issue where the java Hashtable test simulation was throwing a null pointer exception.  This turned out to be a duplicate counter not being initialized properly before running the simulation.  Not my biggest mistake, but it still help up development for a good half-hour.
+ 
+ Lastly, there is still an unsovled bug whereas the Java Hashtable does not exit when it reaches it's load factor.  Before that chance arrives, the Hashtable rehashes and increases it's capacity.  Still working on this one.
+ 
+ Otherwise, development was rather slow and uneventful.  I do wish I had the time to make each main method look a little less cluttered, as each switch case for the generic object types can get a bit repetitive, but I prioritized function over making that area look nice.
+ 
+
+
+----------------------------------------------------------------------------

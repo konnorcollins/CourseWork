@@ -1,0 +1,73 @@
+***************
+* Project 1 Part 1: Deterministic Finite Automata
+* CS 361
+* 2/23/2018
+* Konnor Collins & Andrew White
+***************
+
+OVERVIEW:
+  The program included in this submission simulates a basic Deterministic Finite Automata (DFA).
+  The user can define a DFA and input strings to test in a text file.  
+  By feeding this to the program, you can determine if those strings are accepted by the defined DFA.
+  
+INCLUDED FILES:
+  * fa/FAInterface.java - provided source file
+  * fa/State.java - provided source file
+  * fa/dfa/DFAState.java - source file
+  * fa/dfa/DFADriver.java - provided source file
+  * fa/dfa/DFA.java - source file
+  * README - this file
+  * tests/p1tc1.txt - provided test file
+  * tests/p1tc2.txt - provided test file
+  * tests/p1tc3.txt - provided test file
+  
+COMPILING & RUNNING:
+  To compile the program:
+    Ensure that all source files are present in their specified subdirectory.
+    Then, use the following bash command in the submitted root directory:
+      $ javac fa/*.java fa/dfa/*.java
+    This should ensure that all files are compiled successfully.
+  
+  To run the program:
+    Ensure that the program compiled successfully.  In the submitted root directory, use the following bash command:
+      $ java fa/dfa/DFADriver [dfa file]
+    
+    Whereas [dfa file] refers to the text file where the user defined DFA exists.
+      (Several test files are included in the "tests" subdirectory.)
+    
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+  The included DFA and DFAState classes represent a Deterministic Finite Automata and a State in that automata respectively.
+    The DFA object should carry out all functionality that a DFA should be responsible for.
+    Likewise, the DFAState object should also behave as if it were in a DFA.  That is, it should only have ONE and ONLY ONE transition per unique input symbol.
+  A Deterministic Finite Automata (DFA) is defined as a 5-tuple.  This being
+    Q       : The defined states.
+    Sigma   : The defined alphabet.
+    delta   : The defined transition function.
+    q0      : The starting state.
+    F       : The set of "final" states.
+  
+  We define Q, Sigma, q0, and F as member values of the DFA object.
+    * Q is defined as a Map, with the "Key" being the name of the state and the "Value" being the DFAState object.
+    * Sigma is defined as a String (character array).
+    * q0 is defined as a reference to a DFAState object.
+    * F is defined as a list of DFAState objects.
+    
+  This just leaves delta, the transition function.  As each transition must go FROM a state TO a state, we thought it best to define the transitions in their "starting" state.
+    We accomplished this by defining a member variable Map in each DFAState object.  The "Key" for this map is the character symbol for the transition, and the "Value" being the name of the DFAState object to transit to.
+    As a deterministic machine has one AND ONLY one transition for a given input symbol, this implementation is within the specification of a Deterministicf Finite Automata.  A Non-deterministic Finite Automata may require another implementation.
+  
+TESTING:
+  Testing was done with the given test files, which can be found in the "tests" subdirectory.
+    The program was tested by comparing the output from the given files, to the sample output given in the project specifications.
+    You can test the DFA simulation yourself.  Instructions are in the COMPILING & RUNNING section of this README.
+    
+    All input strings defined below the DFA in the text file given to the driver will be tested individually.  If the program prints a "yes", then the input is accepted.  Rejected inputs will appear as "no".
+    You can define your own DFA's and input strings.  If you feed them into the simulator, you should see that the accept/reject status for that string will match one determined via tracing the string on paper.
+    
+   
+DISCUSSION:
+    The only major issue found while testing the program was with formatting output.
+      When creating a table representing delta, the transition function, there was an issue with spacing whereas each destination state was shifted over by a tab.
+      This output could be misconstrued as a DFA machine that was inequivalent with the one defined by the user.  Thankfully, the fix for this was just modifying some basic string concatenation.
+      
+    A minor issue with implementing the given interfaces to DFA and DFAState did come up during the initial implementation. The return types were incorrect, which led to some interesting but ultimately scrapped method bodies.  You may see the remnants of this from the getter methods returning a "Set" in the DFA.java source file.

@@ -1,0 +1,82 @@
+***************
+* Project 1 Part 2: Non-Deterministic Finite Automata
+* CS 361
+* 4/5/2018
+* Konnor Collins & Andrew White
+***************
+
+
+OVERVIEW:
+	The included project is a simulation of a Non-deterministic Finite Automata (NFA).
+	The program reads in a text file describing how to construct a NFA.
+	The NFA is then used to construct an equivalent Deterministic Finite Automata (DFA), which is then tested with sample string inputs.
+
+
+INCLUDED FILES:
+  * fa/FAInterface.java - provided source file
+  * fa/State.java - provided source file
+  * fa/dfa/DFAState.java - provided file
+  * fa/dfa/DFA.java - provided file
+  * fa/dfa/DFAInterface.java - provided file
+  
+  * fa/nfa/NFADriver.java - provided source file
+  * fa/nfa/NFAInterface.java - provided source file 
+  * fa/nfa/NFAState.java - source file
+  * fa/nfa/NFA.java - source file
+  * README - this file
+  * tests/p2tc0.txt - provided test file
+  * tests/p2tc1.txt - provided test file
+  * tests/p2tc2.txt - provided test file
+  * tests/p2tc3.txt - provided test file
+
+
+COMPILING AND RUNNING:
+  To compile the program:
+    Ensure that all source files are present in their specified sub-directory.
+    Then, use the following bash command in the submitted root directory:
+      $ javac fa/*.java fa/dfa/*.java fa/nfa/*.java
+    This should ensure that all files are compiled successfully.
+  
+  To run the program:
+    Ensure that the program compiled successfully.  In the submitted root directory, use the following bash command:
+      $ java fa/nfa/NFADriver [nfa file]
+    
+    Whereas [nfa file] refers to the text file where the user defined NFA exists.
+      (Several test files are included in the "tests" subdirectory.)
+    
+
+PROGRAM DESIGN & IMPORTANT CONCEPTS:
+
+	The included NFA and NFAState files represent a Non-deterministic Finite Automata, and a state in that automata respectively.
+	The NFA object is responsible for constructing an equivalent Deterministic Finite Automata for user input to be tested with.
+	The NFAState object is responsible for keeping track of all possible transitions that originate from itself.
+	
+	A Non-deterministic Finite Automata (NFA) is defined as a 5-tuple:
+		Q		: The defined states.
+		Sigma	: The defined alphabet.
+		delta	: The defined transition function.
+		q0		: The starting state.
+		F		: The set of final states.
+		
+	We define Q and Sigma in the NFA class as a Set of NFAState objects and a Set of Characters respectively.
+	We define q0 as a reference to a NFAState object in the NFA class.
+	We define Sigma as a HashMap object with a key pointing to a Set of NFAState objects.  This ensures that multiple endpoints can be assigned to the same state and input character.
+	We define F as a boolean value in each NFAState object.  This is assigned when the state is created.
+	
+
+TESTING:
+	Testing was conducted with the four included test files.
+	At first, the program's "eClosure" function was broken horribly.  We made this function much simpler by making very good use of a Queue object.
+	
+	The first major problem encountered with implementing the project came from the method that constructs a DFA object equivalent to the given NFA object.
+		This was due to a major conceptual flaw with how we implemented the DFA object's construction.
+		We erroneously grouped  "state creation" with "transition creation" into a single status for each group of states.
+		Because of this, duplicate states were inserted into the DFA object, causing several infinite loops and faulty input testing.
+		This was solved by creating two different "flags" for each state object.  A "known" flag that indicates that such a state was already created and inserted into the DFA, and a "processed" flag that indicates the transitions for a given starting state have been inserted into the DFA.
+		
+	The second (and last) major problem was handling transitions inserted into the DFA that had a end-state that was a null reference.
+		This was solved by creating a "trap" flag that triggered whenever a transition was inserted that lead to no existing state.
+		This flag creates a new "garbage" state that, for all character inputs, will recur unto itself.  This garbage state is not final, so any input that reaches this state will not be accepted by the DFA.
+	
+	In other words, the "getDFA" method in the NFA class was where we spent the majority of development time, unsurprisingly so!
+	

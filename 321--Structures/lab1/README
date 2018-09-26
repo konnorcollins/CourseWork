@@ -1,0 +1,85 @@
+****************
+* Lab 1 - Memory Cache
+* CS 321
+* 9/8/2017
+* Konnor Collins
+**************** 
+
+OVERVIEW:
+
+ The program included in this submission tests cache functionality with String tokens in a given text file.
+ 
+ Depending on the user's preference(s), the number of Cache levels and Cache capacity can be modified on the command line.
+ 
+ 
+
+
+INCLUDED FILES:
+
+ * Cache.java - source file
+ * Test.java - source file
+ * README - this file
+
+
+COMPILING AND RUNNING:
+
+ To compile the program:
+	Ensure that all source files (those included with the submission, as well as DLLNode.java and ICache.java) are present in the same directory.  Then, use the following command in bash in that directory:
+	 $ javac Test.java
+	 
+	This should compile the entire program without errors.
+ 
+ To run the program:
+	Ensure that the program compiled successfully.  Then, in that same directory, enter the following command in bash:
+	$ java Test [1 | 2] [L1 cache size] [ | L2 cache size] [filename]
+	
+	Where the flags corrospond to the following:
+		[1 | 2]: Specifies if you want to use ONE or TWO cache objects.
+		[L1 cache size]: The maximum capacity of the first cache.
+		[ | L2 cache size]: The maximum capacity of the second cache, if applicable.
+			NOTE: You cannot specify a smaller L2 Capacity than your L1 Capacity.
+		[filename]: The name of the file to be tested with (usually filled with strings).
+
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+	The Cache behaves like a double-linked list.  That is, it contains a reference to two nodes containing a generic data type.  These nodes can also point to the node previous to them, and the node next to them.
+	
+	The best advantage of using a double-linked list in a Cache is writing a token already present in the Cache to the top.  Doing so with an ArrayList would require shifting every stored value.  Here, we need only change the 'previous' and 'next' node references in a few nodes.  In other words, writing or adding a node in the Cache is O(c).
+	
+	The downside to this is looking for a node in the Cache.  We have to check each individual node and compare it's stored value to see if it is equivalent to our specified target value.  Worst case scenario, we loop through all of the nodes in the Cache and do not find the node holding this value, usually meaning an overhead of O(n) (n being the number of elements stored in the Cache).  On average, you could estimate the overhead being around lg(n).
+	
+	The included 'Test' class helps with testing the aforementioned DLL Cache.  It opens and reads any supplied text file and reads each String token one-by-one. If it does not find the specified token in its Cache(s), it will add that token to them.  If the token is already present, it will be put at the top of the Cache(s).
+	
+	After the provided text file has been exhausted, the program will output some statistics, such as how often each Cache finds a value already stored inside, or the percentage of successful cache searches against total searches.
+	
+	A couple of methods were added beyond the requested methods in 'ICache'.  These were basic getter(s) for the number of hits and the number of accesses.  These were for simplicity and cleanliness in the source files.
+	
+	All percentage formatting done in the final stages of the program is done with print formatting, or the 'printf' method. 
+
+TESTING:
+
+	If you attempt to give an invalid argument, or an incorrect number of arguments, the program will abort prematurely, nagging you about how to correctly make good use of itself.
+	
+	If for some reason your provided text file is incompatable with Java's Scanner, or the file does not exist, the program will immediately abort and notify you of the error.
+	
+	The above functionality has been tested to an extreme degree due to my own incompetence at using command line arguments inside an IDE correctly.  This much can be assured.
+
+
+DISCUSSION:
+ 
+	The most trouble I had while working on this lab would be properly reimplementing a Double Linked List.  Especially in regards to finding a node containing a target value.
+	
+	Originally I had attempted to do this by storing two node references, the first was for checking values, and the second for determining if the end of the list had been reached.  Note that these two nodes are adjacent in the list.
+	
+	This proved to be cumbersome, as the best name for one of these node(s) would either be "previous node" or "next node" depending on how you viewed the search method.  These names are coincidentally well defined for defining nodes relative to eachother when moving a node to the top of the Cache.
+	
+	So I replaced that search method with a Do-While loop that checked that the current node reference existed before advancing to the next node in the list.
+	
+	Before this lab I did not remember why I was not a fan of implementing my own Double Linked Lists.  Now I remember.
+	
+	I may have had trouble finding an appropriate way of formatting my doubles into proper percantages.  First I fumbled around with java's "NumberFormat", but I did not find any easy way of implementing the requested formatting without delving into 'regex'.
+	
+	I resorted to print formatting and a small multiplication per print.  This was a simple and nice solution.
+
+----------------------------------------------------------------------------
