@@ -1,0 +1,1 @@
+x=1+2; # this should leave out the dummy statement y=1+345
