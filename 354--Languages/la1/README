@@ -1,0 +1,55 @@
+Konnor Collins
+CS 354-002
+LA1
+
+"Super Duper"
+
+--------------
+|Source Files|
+--------------
+
+ super-duper.scm - Scheme file
+ 
+--------
+|Useage|
+--------
+
+ To use the included scheme file, use the following command in the same directory as the scheme file via bash:
+   $ mit-scheme --load super-duper.scm
+ This will load up the scheme console with the functions defined in 'super-duper.scm' defined.  This way, you are able to test any permutation of inputs that you like.
+ I suggest trying some of the example inputs with the commands given in the diagram on the third page of the assignment.  This can be found on onyx.boisestate.edu atthe following directory:
+   /home/JBuffenb/classes/CS354/assignments/la1-2/hw.pdf
+ 
+ 
+---------
+|Testing|
+---------
+
+ Most testing was done with the provided commands in the assignment document.  Other random inputs were used, but all were similar in structure.  I was limited by how many nested lists I could test in one command due to an issue with my remote client of choice; using the backspace key or arrow keys to correct typing errors resulted in the Scheme console misinterpreting my input, requiring restarting the Scheme console.  I have probably lost a good twenty to thirty minutes of productivity to this.  Of course, I will be looking into an alternative remote client.
+ 
+ That aside, the output from my function is almost perfect.  The only issue remaining that I still am unable to fix is how nested each output list is.
+ 
+ For example, let's say I used the following command while testing:
+    >(super-duper '(a b) 2)
+ The output I would recieve is the following:
+    ;Value 13: ((a a) (b b))
+ Groups of each individual element are all nested one layer too deep.  I will provide a few more pairs of input/output to illustrate my point:
+   >(super-duper '(a b c) 3)
+   ;Value 14: ((a a a) (b b b) (c c c))
+ ----------------------
+   >(super-duper '(a (1 2) b) 2)
+   ;((a a) (((1 1) (2 2)) ((1 1) (2 2))) (b b))
+ Every singular element and sub-list has this issue.  Otherwise, the ordering and frequency of each element is as expected.
+ Thankfully, this issue does not persist when you try to super-duplicate an atom, as no recursion occurs.  
+ 
+-------
+|Other|
+-------
+
+  I probably should have read the documentation more thoroughly early on.  I had some issues with early development due to how my functions were recurring, which made debugging a royal pain.  This horrid structure was solved somewhat by proper use of the 'cons' function, which can take two arguments for a constructed list.  Before I had learned of this, some of my recurring functions were calling another nested function which then DIRECTLY recalled it's parent.  Not my finest piece of work, that earlier iteration.
+  
+  As far as functionality is concerned, I am almost content with the current state of my Super Duplicater.  It was a fine attempt for what was basically my Scheme "Hello World".  
+  
+  If you note a solution to my nesting problem discussed in [Testing], please send me feedback to my e-mail at:
+    konnorcollins@u.boisestate.edu
+  I appreciate your feedback.

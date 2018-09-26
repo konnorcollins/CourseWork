@@ -1,0 +1,2 @@
+#!/bin/bash
+gawk -f filter.awk BldgPrmtsPublic10-01-2017To10-15-2017.csv

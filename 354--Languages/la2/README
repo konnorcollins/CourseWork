@@ -1,0 +1,23 @@
+--Konnor Collins
+--CS354-2
+--10-19-2017
+
+--Language Assignment 2
+
+To run on command line:
+	gst Customer.st Account.st CheckingAccount.st SavingsAccount.st Bank.st
+
+I did attempt a "Doit" file similar to the one included with the smalltalk Sum example, however I was unable to get it functioning.
+If it becomes functional again, you can use the following on your command line:
+	./Doit
+	
+Regardless, the bank simulation works as intended.
+Learning smalltalk was quite the experience.  I do believe I had the most trouble with understanding the error messages from gst.  It was only after a good half hour of debugging that I realized that an error being thrown at me was not initializing a temporary variable in Bank.st's toString method.  If I were still not completely used to the language's syntax, that would have been quite embaresssing.
+
+I liked this language a bit more than Scheme, but this is probably just my bias towards OOP showing.  I look forward to tinkering around with the language our group decides on.
+
+Until next submission,
+
+-Konnor Collins
+-konnorcollins@u.boisestate.edu
+-(208).340.9830
