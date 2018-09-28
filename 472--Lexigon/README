@@ -1,0 +1,5 @@
+## Lexigon
+
+Lexigon is a "What You See Is What You Get" text-editor prototype modeled to the specifications laid out in [Design Patterns by the Gang of Four](https://en.wikipedia.org/wiki/Design_Patterns)
+
+Each individual diagram shows the integration of each property, which are listed in the Case Study section of the previously given wikipedia link.
