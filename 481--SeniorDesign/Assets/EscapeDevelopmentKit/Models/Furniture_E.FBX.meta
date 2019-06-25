@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 216baeeea81a1064798a8d00a2d8597a
+timeCreated: 1499181641
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 1kg
+    100002: 2kg
+    100004: 5kg
+    100006: Card
+    100008: Card_Reader
+    100010: //RootNode
+    100012: Key
+    100014: Keyboard
+    100016: Keyhole
+    100018: Keyhole 1
+    100020: Libra
+    100022: Libra_code
+    100024: Libra_code001
+    100026: Lock
+    100028: Monitor
+    100030: Monitor_Screen
+    100032: Monitor_Screen001
+    100034: Paper
+    100036: Remote_TV
+    100038: Switch
+    100040: Switch001
+    100042: Switch_button
+    100044: Switch_button 1
+    100046: TV
+    100048: TV_Screen
+    100050: TV_Screen001
+    100052: usb
+    400000: 1kg
+    400002: 2kg
+    400004: 5kg
+    400006: Card
+    400008: Card_Reader
+    400010: //RootNode
+    400012: Key
+    400014: Keyboard
+    400016: Keyhole
+    400018: Keyhole 1
+    400020: Libra
+    400022: Libra_code
+    400024: Libra_code001
+    400026: Lock
+    400028: Monitor
+    400030: Monitor_Screen
+    400032: Monitor_Screen001
+    400034: Paper
+    400036: Remote_TV
+    400038: Switch
+    400040: Switch001
+    400042: Switch_button
+    400044: Switch_button 1
+    400046: TV
+    400048: TV_Screen
+    400050: TV_Screen001
+    400052: usb
+    2300000: 1kg
+    2300002: 2kg
+    2300004: 5kg
+    2300006: Card
+    2300008: Card_Reader
+    2300010: Key
+    2300012: Keyboard
+    2300014: Keyhole
+    2300016: Keyhole 1
+    2300018: Libra
+    2300020: Libra_code
+    2300022: Libra_code001
+    2300024: Lock
+    2300026: Monitor
+    2300028: Monitor_Screen
+    2300030: Monitor_Screen001
+    2300032: Paper
+    2300034: Remote_TV
+    2300036: Switch
+    2300038: Switch001
+    2300040: Switch_button
+    2300042: Switch_button 1
+    2300044: TV
+    2300046: TV_Screen
+    2300048: TV_Screen001
+    2300050: usb
+    3300000: 1kg
+    3300002: 2kg
+    3300004: 5kg
+    3300006: Card
+    3300008: Card_Reader
+    3300010: Key
+    3300012: Keyboard
+    3300014: Keyhole
+    3300016: Keyhole 1
+    3300018: Libra
+    3300020: Libra_code
+    3300022: Libra_code001
+    3300024: Lock
+    3300026: Monitor
+    3300028: Monitor_Screen
+    3300030: Monitor_Screen001
+    3300032: Paper
+    3300034: Remote_TV
+    3300036: Switch
+    3300038: Switch001
+    3300040: Switch_button
+    3300042: Switch_button 1
+    3300044: TV
+    3300046: TV_Screen
+    3300048: TV_Screen001
+    3300050: usb
+    4300000: Paper
+    4300002: Libra
+    4300004: Lock
+    4300006: Card_Reader
+    4300008: Switch_button
+    4300010: Switch_button
+    4300012: Switch
+    4300014: Keyhole
+    4300016: Keyhole
+    4300018: Card
+    4300020: Key
+    4300022: Keyboard
+    4300024: Monitor
+    4300026: 5kg
+    4300028: 2kg
+    4300030: 1kg
+    4300032: TV
+    4300034: Remote_TV
+    4300036: Monitor_Screen
+    4300038: TV_Screen
+    4300040: Libra_code
+    4300042: Switch001
+    4300044: Libra_code001
+    4300046: TV_Screen001
+    4300048: Monitor_Screen001
+    4300050: usb
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

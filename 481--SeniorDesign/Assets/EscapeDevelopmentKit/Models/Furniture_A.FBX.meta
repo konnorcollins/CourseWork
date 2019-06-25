@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 5133a3e03925c3b4d89aecb25d4f576d
+timeCreated: 1499081532
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Art
+    100002: Bed
+    100004: Cable
+    100006: Combination_lock
+    100008: Combination_lock 1
+    100010: Combination_lock 2
+    100012: Door
+    100014: //RootNode
+    100016: Lamp
+    100018: Lamp 1
+    100020: Lock
+    100022: Lock 1
+    100024: Pillow
+    100026: Pillow 1
+    100028: Safe
+    100030: Safe_door
+    100032: Safe_door 1
+    100034: Washing_Machine
+    100036: Safe_door 2
+    100038: Key_hole
+    400000: Art
+    400002: Bed
+    400004: Cable
+    400006: Combination_lock
+    400008: Combination_lock 1
+    400010: Combination_lock 2
+    400012: Door
+    400014: //RootNode
+    400016: Lamp
+    400018: Lamp 1
+    400020: Lock
+    400022: Lock 1
+    400024: Pillow
+    400026: Pillow 1
+    400028: Safe
+    400030: Safe_door
+    400032: Safe_door 1
+    400034: Washing_Machine
+    400036: Safe_door 2
+    400038: Key_hole
+    2300000: Art
+    2300002: Bed
+    2300004: Cable
+    2300006: Combination_lock
+    2300008: Combination_lock 1
+    2300010: Combination_lock 2
+    2300012: Door
+    2300014: Lamp
+    2300016: Lamp 1
+    2300018: Lock
+    2300020: Lock 1
+    2300022: Pillow
+    2300024: Pillow 1
+    2300026: Safe
+    2300028: Safe_door
+    2300030: Safe_door 1
+    2300032: Washing_Machine
+    2300034: Safe_door 2
+    2300036: Key_hole
+    3300000: Art
+    3300002: Bed
+    3300004: Cable
+    3300006: Combination_lock
+    3300008: Combination_lock 1
+    3300010: Combination_lock 2
+    3300012: Door
+    3300014: Lamp
+    3300016: Lamp 1
+    3300018: Lock
+    3300020: Lock 1
+    3300022: Pillow
+    3300024: Pillow 1
+    3300026: Safe
+    3300028: Safe_door
+    3300030: Safe_door 1
+    3300032: Washing_Machine
+    3300034: Safe_door 2
+    3300036: Key_hole
+    4300000: Bed
+    4300002: Door
+    4300004: Lock
+    4300006: Safe_door
+    4300008: Combination_lock
+    4300010: Combination_lock
+    4300012: Combination_lock
+    4300014: Safe_door
+    4300016: Lamp
+    4300018: Art
+    4300020: Lock
+    4300022: Pillow
+    4300024: Pillow
+    4300026: Safe
+    4300028: Lamp
+    4300030: Washing_Machine
+    4300032: Cable
+    4300034: Safe_door
+    4300036: Key_hole
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

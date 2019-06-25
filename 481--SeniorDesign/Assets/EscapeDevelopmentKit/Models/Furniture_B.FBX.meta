@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: 325670a483a854847a2dbc4d23c9081f
+timeCreated: 1499071684
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cupboard
+    100002: Cupboard 1
+    100004: Cupboard 2
+    100006: Cupboard 3
+    100008: Cupboard 4
+    100010: Cupboard 5
+    100012: Cupboard_Door
+    100014: Cupboard_Door 1
+    100016: Cupboard_Door 2
+    100018: Cupboard_Door 3
+    100020: Cupboard_Door 4
+    100022: Cupboard_Door 5
+    100024: Door
+    100026: Door 1
+    100028: Drawer
+    100030: Drawer 1
+    100032: Drawer 2
+    100034: Drawer 3
+    100036: Drawer 4
+    100038: Drawer 5
+    100040: Drawer 6
+    100042: //RootNode
+    100044: Handle
+    100046: Handle 1
+    100048: Shelf
+    100050: Cupboard 6
+    100052: Mirror
+    100054: Handle 2
+    400000: Cupboard
+    400002: Cupboard 1
+    400004: Cupboard 2
+    400006: Cupboard 3
+    400008: Cupboard 4
+    400010: Cupboard 5
+    400012: Cupboard_Door
+    400014: Cupboard_Door 1
+    400016: Cupboard_Door 2
+    400018: Cupboard_Door 3
+    400020: Cupboard_Door 4
+    400022: Cupboard_Door 5
+    400024: Door
+    400026: Door 1
+    400028: Drawer
+    400030: Drawer 1
+    400032: Drawer 2
+    400034: Drawer 3
+    400036: Drawer 4
+    400038: Drawer 5
+    400040: Drawer 6
+    400042: //RootNode
+    400044: Handle
+    400046: Handle 1
+    400048: Shelf
+    400050: Cupboard 6
+    400052: Mirror
+    400054: Handle 2
+    2300000: Cupboard
+    2300002: Cupboard 1
+    2300004: Cupboard 2
+    2300006: Cupboard 3
+    2300008: Cupboard 4
+    2300010: Cupboard 5
+    2300012: Cupboard_Door
+    2300014: Cupboard_Door 1
+    2300016: Cupboard_Door 2
+    2300018: Cupboard_Door 3
+    2300020: Cupboard_Door 4
+    2300022: Cupboard_Door 5
+    2300024: Door
+    2300026: Door 1
+    2300028: Drawer
+    2300030: Drawer 1
+    2300032: Drawer 2
+    2300034: Drawer 3
+    2300036: Drawer 4
+    2300038: Drawer 5
+    2300040: Drawer 6
+    2300042: Handle
+    2300044: Handle 1
+    2300046: Shelf
+    2300048: Cupboard 6
+    2300050: Mirror
+    2300052: Handle 2
+    3300000: Cupboard
+    3300002: Cupboard 1
+    3300004: Cupboard 2
+    3300006: Cupboard 3
+    3300008: Cupboard 4
+    3300010: Cupboard 5
+    3300012: Cupboard_Door
+    3300014: Cupboard_Door 1
+    3300016: Cupboard_Door 2
+    3300018: Cupboard_Door 3
+    3300020: Cupboard_Door 4
+    3300022: Cupboard_Door 5
+    3300024: Door
+    3300026: Door 1
+    3300028: Drawer
+    3300030: Drawer 1
+    3300032: Drawer 2
+    3300034: Drawer 3
+    3300036: Drawer 4
+    3300038: Drawer 5
+    3300040: Drawer 6
+    3300042: Handle
+    3300044: Handle 1
+    3300046: Shelf
+    3300048: Cupboard 6
+    3300050: Mirror
+    3300052: Handle 2
+    4300000: Door
+    4300002: Cupboard
+    4300004: Shelf
+    4300006: Drawer
+    4300008: Handle
+    4300010: Cupboard
+    4300012: Door
+    4300014: Cupboard
+    4300016: Cupboard
+    4300018: Cupboard
+    4300020: Cupboard
+    4300022: Cupboard_Door
+    4300024: Drawer
+    4300026: Drawer
+    4300028: Drawer
+    4300030: Drawer
+    4300032: Drawer
+    4300034: Handle
+    4300036: Drawer
+    4300038: Cupboard_Door
+    4300040: Cupboard_Door
+    4300042: Cupboard_Door
+    4300044: Cupboard_Door
+    4300046: Cupboard_Door
+    4300048: Mirror
+    4300050: Handle
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

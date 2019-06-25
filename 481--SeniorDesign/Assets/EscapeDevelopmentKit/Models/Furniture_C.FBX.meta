@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 985fc76254f2a364cb593b2b76c2511f
+timeCreated: 1499176861
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cheese
+    100002: Electrical switchboard
+    100004: Electrical switchboard 1
+    100006: Electrical switchboard 2
+    100008: Fireplace
+    100010: //RootNode
+    100012: Glass
+    100014: Knife
+    100016: Matches
+    100018: microwave
+    100020: microwave_door
+    100022: Plate
+    100024: Water
+    100026: Water_Cooler
+    400000: Cheese
+    400002: Electrical switchboard
+    400004: Electrical switchboard 1
+    400006: Electrical switchboard 2
+    400008: Fireplace
+    400010: //RootNode
+    400012: Glass
+    400014: Knife
+    400016: Matches
+    400018: microwave
+    400020: microwave_door
+    400022: Plate
+    400024: Water
+    400026: Water_Cooler
+    2300000: Cheese
+    2300002: Electrical switchboard
+    2300004: Electrical switchboard 1
+    2300006: Electrical switchboard 2
+    2300008: Fireplace
+    2300010: Glass
+    2300012: Knife
+    2300014: Matches
+    2300016: microwave
+    2300018: microwave_door
+    2300020: Plate
+    2300022: Water
+    2300024: Water_Cooler
+    3300000: Cheese
+    3300002: Electrical switchboard
+    3300004: Electrical switchboard 1
+    3300006: Electrical switchboard 2
+    3300008: Fireplace
+    3300010: Glass
+    3300012: Knife
+    3300014: Matches
+    3300016: microwave
+    3300018: microwave_door
+    3300020: Plate
+    3300022: Water
+    3300024: Water_Cooler
+    4300000: Plate
+    4300002: Electrical switchboard
+    4300004: Electrical switchboard
+    4300006: microwave_door
+    4300008: microwave
+    4300010: Fireplace
+    4300012: Knife
+    4300014: Matches
+    4300016: Water_Cooler
+    4300018: Cheese
+    4300020: Electrical switchboard
+    4300022: Glass
+    4300024: Water
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

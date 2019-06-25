@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: 9a2e2a1dd78c84b48a40b49bdbcca956
+timeCreated: 1499262882
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: CODE
+    100002: Element
+    100004: //RootNode
+    100006: Hook
+    100008: lever
+    100010: 'Playing_Cards '
+    100012: Rug
+    100014: Towel
+    100016: Vase
+    100018: Vase 1
+    100020: Vase 2
+    400000: CODE
+    400002: Element
+    400004: //RootNode
+    400006: Hook
+    400008: lever
+    400010: 'Playing_Cards '
+    400012: Rug
+    400014: Towel
+    400016: Vase
+    400018: Vase 1
+    400020: Vase 2
+    2300000: CODE
+    2300002: Element
+    2300004: Hook
+    2300006: lever
+    2300008: 'Playing_Cards '
+    2300010: Rug
+    2300012: Towel
+    2300014: Vase
+    2300016: Vase 1
+    2300018: Vase 2
+    3300000: CODE
+    3300002: Element
+    3300004: Hook
+    3300006: lever
+    3300008: 'Playing_Cards '
+    3300010: Rug
+    3300012: Towel
+    3300014: Vase
+    3300016: Vase 1
+    3300018: Vase 2
+    4300000: Rug
+    4300002: lever
+    4300004: Element
+    4300006: 'Playing_Cards '
+    4300008: CODE
+    4300010: Hook
+    4300012: Towel
+    4300014: Vase
+    4300016: Vase
+    4300018: Vase
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
